@@ -1,22 +1,27 @@
 <mat-drawer-container class="example-container" style="width: 100%; height: 100%;">
-  <mat-drawer mode="side" opened style="width: 230px;">
+  <mat-drawer mode="side" opened class="matDrawer">
     <img src="../assets/imgs/Spotify_Logo_CMYK_White.png" alt="Logo Spotify" style="height: 40px;">
   </mat-drawer>
   <mat-drawer-content>
-    <mat-toolbar color="" style="height: 50px !important;">
+    <mat-toolbar color="" class="matToolbar">
       <mat-toolbar-row>
-        <button mat-mini-fab>&#60;</button>
-        <button mat-mini-fab>&#62;</button>
+        <button mat-mini-fab class="btnSeta">&#60;</button>
+        <button mat-mini-fab class="btnSeta">&#62;</button>
         <span class="separador"></span>
-        <div mat-button [matMenuTriggerFor]="menuRef">
-          <mat-icon svgIcon="avatar" aria-hidden="false" aria-label="Avatar"></mat-icon>
-          <span>Nome</span>
+        <div mat-button [matMenuTriggerFor]="menuRef" class="divMenu">
+          <div class="divAvatar">
+            <mat-icon svgIcon="avatar" aria-hidden="false" aria-label="Avatar" style="height: 16px;"></mat-icon>
+          </div>
+          <span style="margin-left: 8px;">Nome</span>
           <mat-menu #menuRef="matMenu">
-              <button mat-menu-item>Conta</button>
-              <button mat-menu-item>Menu</button>
-              <mat-divider></mat-divider>
-              <button mat-menu-item>Sair</button>
+            <button mat-menu-item>Conta</button>
+            <button mat-menu-item>Menu</button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item>Sair</button>
           </mat-menu>
+          <div style="height: 24px;">
+            <mat-icon svgIcon="setaBaixo" aria-hidden="false" aria-label="setaBaixo"></mat-icon>
+          </div>
         </div>
       </mat-toolbar-row>
     </mat-toolbar>
