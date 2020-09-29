@@ -13,6 +13,9 @@ export class AppComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'avatar',
-      sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/user-regular.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/user-regular.svg'))
+      .addSvgIcon(
+        'setaBaixo',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/caret-down.svg'));
   }
 }

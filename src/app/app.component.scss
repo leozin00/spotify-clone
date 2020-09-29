@@ -1,7 +1,44 @@
+$cinza-escuro: #111;
+
+mat-drawer-container{
+  background-color: $cinza-escuro;
+}
 .matToolbar{
-  height: 10px !important;
+  height: 50px !important;
+  background-color: $cinza-escuro;
 }
 
 .separador{
   flex: 1 1 auto;
+}
+
+.matDrawer{
+  width: 230px;
+  background-color: black;
+  padding: 24px 0px 0px 0px;
+}
+
+.btnSeta{
+  background-color: rgba($color: #000000, $alpha: .7);
+  color: white;
+}
+
+.divMenu{
+  background-color: black;
+  border-radius: 23px;
+  height: 32px;
+  min-width: 32px;
+  padding: 2px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divAvatar{
+  height: 28px;
+  width: 28px;
+  float: left;
+  background-color: gray;
+  border-radius: 100%;
 }
