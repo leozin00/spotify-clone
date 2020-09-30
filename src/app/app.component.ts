@@ -17,14 +17,20 @@ export class AppComponent {
       .addSvgIcon(
         'setaBaixo',
         sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/caret-down.svg'))
-        .addSvgIcon(
+      .addSvgIcon(
         'inicio',
         sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/home.svg'))
-        .addSvgIcon(
+      .addSvgIcon(
         'buscar',
         sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/search.svg'))
-        .addSvgIcon(
+      .addSvgIcon(
         'biblioteca',
-        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/book.svg'));
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/book.svg'))
+      .addSvgIcon(
+        'setaEsquerda',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/chevron-left.svg'))
+      .addSvgIcon(
+        'setaDireita',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/chevron-right.svg'));
   }
 }

@@ -15,12 +15,15 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { BibliotecaComponent } from './paginas/biblioteca/biblioteca.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
+import { CardComponent } from './shared/card/card.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     BibliotecaComponent,
-    InicioComponent
+    InicioComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
     MatDividerModule,
     MatSidenavModule,
     HttpClientModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
