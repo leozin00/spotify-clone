@@ -16,6 +16,21 @@ export class AppComponent {
       sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/user-regular.svg'))
       .addSvgIcon(
         'setaBaixo',
-        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/caret-down.svg'));
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/caret-down.svg'))
+      .addSvgIcon(
+        'inicio',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/home.svg'))
+      .addSvgIcon(
+        'buscar',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/search.svg'))
+      .addSvgIcon(
+        'biblioteca',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/book.svg'))
+      .addSvgIcon(
+        'setaEsquerda',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/chevron-left.svg'))
+      .addSvgIcon(
+        'setaDireita',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/chevron-right.svg'));
   }
 }

@@ -1,12 +1,18 @@
 <mat-drawer-container class="example-container" style="width: 100%; height: 100%;">
   <mat-drawer mode="side" opened class="matDrawer">
     <img src="../assets/imgs/Spotify_Logo_CMYK_White.png" alt="Logo Spotify" style="height: 40px;">
+
+    <mat-list>
+      <mat-list-item> <a routerLink=""><mat-icon svgIcon="inicio" aria-hidden="false" aria-label="Inicio"></mat-icon>Inicio</a> </mat-list-item>
+      <mat-list-item> <a routerLink="buscar"><mat-icon svgIcon="buscar" aria-hidden="false" aria-label="Buscar"></mat-icon>Buscar</a> </mat-list-item>
+      <mat-list-item> <a routerLink="biblioteca"><mat-icon svgIcon="biblioteca" aria-hidden="false" aria-label="Biblioteca"></mat-icon>Sua Biblioteca</a> </mat-list-item>
+     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
     <mat-toolbar color="" class="matToolbar">
       <mat-toolbar-row>
-        <button mat-mini-fab class="btnSeta">&#60;</button>
-        <button mat-mini-fab class="btnSeta">&#62;</button>
+        <button mat-mini-fab class="btnSeta"><mat-icon svgIcon="setaEsquerda" aria-hidden="false" aria-label="Avatar" style="height: 16px;"></mat-icon></button>
+        <button mat-mini-fab class="btnSeta"><mat-icon svgIcon="setaDireita" aria-hidden="false" aria-label="Avatar" style="height: 16px;"></mat-icon></button>
         <span class="separador"></span>
         <div mat-button [matMenuTriggerFor]="menuRef" class="divMenu">
           <div class="divAvatar">
@@ -25,5 +31,8 @@
         </div>
       </mat-toolbar-row>
     </mat-toolbar>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
   </mat-drawer-content>
 </mat-drawer-container>
