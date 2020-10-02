@@ -9,6 +9,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'spotify-clone';
+  contator = 0;
+  tamanhoHistory = window.history.length;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
@@ -32,5 +34,21 @@ export class AppComponent {
       .addSvgIcon(
         'setaDireita',
         sanitizer.bypassSecurityTrustResourceUrl('../assets/imgs/chevron-right.svg'));
+  }
+
+  avancar(): void{
+    this.tamanhoHistory = window.history.length;
+    this.contator++;
+    console.log(this.tamanhoHistory);
+    console.log(this.contator);
+    window.history.forward();
+  }
+
+  voltar(): void{
+    console.log(this.contator);
+    if(this.contator > 0){
+      this.contator--;
+      window.history.back();
+    }
   }
 }
